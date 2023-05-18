@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='./style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous">
+  </head>
+<body>
+ 
+       
+    <div class="login-box">
+        <h2>Animal Identifier</h2>
+        <form action="http://localhost:5000/" method="POST" enctype = "multipart/form-data">
+          
+          <div class="user-box">
+            <div class="form-group">
+              <div class="col-md-4">
+                
+                  <input type="file" name="file" class="input-file" >
+                 
+                
+              </div>
+          <button type="submit">SUBMIT</button>
+
+            
+           
+        </form>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="{{url_for('static',filename='./app.js')}}"></script>
+  </body>
+</html>
